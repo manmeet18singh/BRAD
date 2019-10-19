@@ -1,0 +1,16 @@
+{
+  "name": "brad",
+  "version": "1.0.0",
+  "description": "brad is a machine learning based application to detect breast cancer based on the input. Developed by students at University at Buffalo",
+  "author": "TJ Chase, Manmeet Singh, Micheal Klien, Patrick Iwaszko",
+  "main": "phase2.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "python-shell": "^1.0.6",
+    "shelljs": "^0.8.3",
+    "socket.io": "^2.2.0"
+  }
+}

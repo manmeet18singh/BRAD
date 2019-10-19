@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/img/BRAD.png">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <!-- custom font -->
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <!-- Bootstrap JS plugins -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/brad_full.png" width="100" height="40" />
+        </a>
+    </nav>
+
+
+    <div class="card">
+        <div class="card-body">
+            <div class="container-fluid">
+                <!-------------------------------- row 1 -------------------------------->
+                <div class="row mx-auto">
+                    <div class="column mx-auto col-2" id="col1">
+                        <h6 class="card-title">Radius Mean:</h6>
+                        <input class="form-control" value=0 id="radius_mean" placeholder="Radius Mean">
+
+                        <h6 class="card-title">Texture Mean:</h6>
+                        <input class="form-control" value=0 id="texture_mean" placeholder="Texture Mean">
+                    </div>
+                    <div class="column mx-auto col-2" id="col2">
+                        <h6 class="card-title">Perimeter Mean:</h6>
+                        <input class="form-control" value=0 id="perimeter_mean" placeholder="Perimeter Mean">
+
+                        <h6 class="card-title">Area Mean:</h6>
+                        <input class="form-control" value=0 id="area_mean" placeholder="Area Mean">
+                    </div>
+                    <div class="column mx-auto col-2" id="col3">
+                        <h6 class="card-title">Smoothness Mean:</h6>
+                        <input class="form-control" value=0 id="smoothness_mean" placeholder="Smoothness Mean">
+
+                        <h6 class="card-title">Compactness Mean:</h6>
+                        <input class="form-control" value=0 id="compactness_mean" placeholder="Compactness Mean">
+                    </div>
+                    <div class="column mx-auto col-2" id="col1">
+                        <h6 class="card-title">Concavity Mean:</h6>
+                        <input class="form-control" value=0 id="concavity_mean" placeholder="Concavity Mean">
+
+                        <h6 class="card-title">Concave Points Mean:</h6>
+                        <input class="form-control" value=0 id="concave_points_mean" placeholder="Concave Points Mean">
+                    </div>
+                    <div class="column mx-auto col-2" id="col2">
+                        <h6 class="card-title">Symmetry Mean:</h6>
+                        <input class="form-control" value=0 id="symmetry_mean" placeholder="Symmetry Mean">
+
+                        <h6 class="card-title">Fractal Dimension Mean:</h6>
+                        <input class="form-control" value=0 id="fractal_dimension_mean" placeholder="Fractal Dimension Mean">
+                    </div>
+                </div>
+                <!-------------------------------- row 2 -------------------------------->
+                <div class="row mx-auto">
+                    <div class="column mx-auto col-2" id="col3">
+                        <h6 class="card-title">Radius SE:</h6>
+                        <input class="form-control" value=0 id="radius_se" placeholder="Radius SE">
+
+                        <h6 class="card-title">Texture SE:</h6>
+                        <input class="form-control" value=0 id="texture_se" placeholder="Texture SE">
+                    </div>
+                    <div class="column mx-auto col-2" id="col1">
+                        <h6 class="card-title">Perimeter SE:</h6>
+                        <input class="form-control" value=0 id="perimeter_se" placeholder="Perimeter SE">
+
+                        <h6 class="card-title">Area SE:</h6>
+                        <input class="form-control" value=0 id="area_se" placeholder="Area SE">
+                    </div>
+                    <div class="column mx-auto col-2" id="col2">
+                        <h6 class="card-title">Smoothness SE:</h6>
+                        <input class="form-control" value=0 id="smoothness_se" placeholder="Smoothness SE">
+
+                        <h6 class="card-title">Compactness SE:</h6>
+                        <input class="form-control" value=0 id="compactness_se" placeholder="Compactness SE">
+                    </div>
+                    <div class="column mx-auto col-2" id="col3">
+                        <h6 class="card-title">Concavity SE:</h6>
+                        <input class="form-control" value=0 id="concavity_se" placeholder="Concavity SE">
+
+                        <h6 class="card-title">Concave Points SE:</h6>
+                        <input class="form-control" value=0 id="concave_points_se" placeholder="Concave Points SE">
+                    </div>
+                    <div class="column mx-auto col-2" id="col1">
+                        <h6 class="card-title">Symmetry SE:</h6>
+                        <input class="form-control" value=0 id="symmetry_se" placeholder="Symmetry SE">
+
+                        <h6 class="card-title">Fractal Dimension SE:</h6>
+                        <input class="form-control" value=0 id="fractal_dimension_se" placeholder="Fractal Dimension SE">
+                    </div>
+                </div>
+                <!-------------------------------- row 3 -------------------------------->
+                <div class="row mx-auto">
+                    <div class="column mx-auto col-2" id="col2">
+                        <h6 class="card-title">Radius Worst:</h6>
+                        <input class="form-control" value=0 id="radius_worst" placeholder="Radius Worst">
+
+                        <h6 class="card-title">Texture Worst:</h6>
+                        <input class="form-control" value=0 id="texture_worst" placeholder="Texture Worst">
+                    </div>
+                    <div class="column mx-auto col-2" id="col3">
+                        <h6 class="card-title">Perimeter Worst:</h6>
+                        <input class="form-control" value=0 id="perimeter_worst" placeholder="Perimeter Worst">
+
+                        <h6 class="card-title">Area Worst:</h6>
+                        <input class="form-control" value=0 id="area_worst" placeholder="Fractal Dimension SE">
+                    </div>
+                    <div class="column mx-auto col-2" id="col1">
+                        <h6 class="card-title">Smoothness Worst:</h6>
+                        <input class="form-control" value=0 id="smoothness_worst" placeholder="Smoothness Worst">
+
+                        <h6 class="card-title">Compactness Worst:</h6>
+                        <input class="form-control" value=0 id="compactness_worst" placeholder="Compactness Worst">
+                    </div>
+                    <div class="column mx-auto col-2" id="col2">
+                        <h6 class="card-title">Concavity Worst:</h6>
+                        <input class="form-control" value=0 id="concavity_worst" placeholder="Concavity Worst">
+
+                        <h6 class="card-title">Concave Points Worst:</h6>
+                        <input class="form-control" value=0 id="concave_points_worst" placeholder="Concave Points Worst">
+                    </div>
+
+                    <div class="column mx-auto col-2" id="col3">
+                        <h6 class="card-title">Symmetry Worst:</h6>
+                        <input class="form-control" value=0 id="symmetry_worst" placeholder="Symmetry Worst">
+
+                        <h6 class="card-title">Fractal Dimension Worst:</h6>
+                        <input class="form-control" value=0 id="fractal_dimension_worst" placeholder="Fractal Dimension Worst">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mx-auto">
+                <div class="column mx-auto col-5" id="col_out">
+                    <textarea class="form-control-sm" rows="1" id="out" placeholder="Your Output" readonly></textarea>
+                </div>
+
+                <div class="column mx-auto col-4" id="col3">
+                </div>
+
+                <div class="column mx-auto col-2" id="col3">
+                    <div class="mx-auto">
+                        <button type="button" class="btn float-right mt-4 mr-3" onclick="rando()">Randomize</button>
+                    </div>
+                </div>
+
+                <div class="column mx-auto col-1" id="col3">
+                    <button type="button" class="btn float-right mt-4" onclick="run()">Send</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function rando() {
+            var randomNums = [];
+
+            for (var i = 0; i < 30; i++) {
+                randomNums[i] = 0;
+            }
+
+            var randIndex = 0;
+            for (var i = 0; i < 30; i++) {
+                randomNums[i] = (Math.random() * 0.075);
+            }
+
+            var radius_mean = document.getElementById('radius_mean').value = randomNums[0];
+            var texture_mean = document.getElementById('texture_mean').value = randomNums[1];
+            var perimeter_mean = document.getElementById('perimeter_mean').value = randomNums[2];
+            var area_mean = document.getElementById('area_mean').value = randomNums[3];
+            var smoothness_mean = document.getElementById('smoothness_mean').value = randomNums[4];
+            var compactness_mean = document.getElementById('compactness_mean').value = randomNums[5];
+            var concavity_mean = document.getElementById('concavity_mean').value = randomNums[6];
+            var concave_points_mean = document.getElementById('concave_points_mean').value = randomNums[7];
+            var symmetry_mean = document.getElementById('symmetry_mean').value = randomNums[8];
+            var fractal_dimension_mean = document.getElementById('fractal_dimension_mean').value = randomNums[9];
+            var radius_se = document.getElementById('radius_se').value = randomNums[10];
+            var texture_se = document.getElementById('texture_se').value = randomNums[11];
+            var perimeter_se = document.getElementById('perimeter_se').value = randomNums[12];
+            var area_se = document.getElementById('area_se').value = randomNums[13];
+            var smoothness_se = document.getElementById('smoothness_se').value= randomNums[14];
+            var compactness_se = document.getElementById('compactness_se').value= randomNums[15];
+            var concavity_se = document.getElementById('concavity_se').value= randomNums[16];
+            var concave_points_se = document.getElementById('concave_points_se').value= randomNums[17];
+            var symmetry_se = document.getElementById('symmetry_se').value= randomNums[18];
+            var fractal_dimension_se = document.getElementById('fractal_dimension_se').value= randomNums[19];
+            var radius_worst = document.getElementById('radius_worst').value= randomNums[20];
+            var texture_worst = document.getElementById('texture_worst').value= randomNums[21];
+            var perimeter_worst = document.getElementById('perimeter_worst').value= randomNums[22];
+            var area_worst = document.getElementById('area_worst').value= randomNums[23];
+            var smoothness_worst = document.getElementById('smoothness_worst').value= randomNums[24];
+            var compactness_worst = document.getElementById('compactness_worst').value= randomNums[25];
+            var concavity_worst = document.getElementById('concavity_worst').value= randomNums[26];
+            var concave_points_worst = document.getElementById('concave_points_worst').value= randomNums[27];
+            var symmetry_worst = document.getElementById('symmetry_worst').value= randomNums[28];
+            var fractal_dimension_worst = document.getElementById('fractal_dimension_worst').value= randomNums[29];
+
+        }
+
+        function run() {
+
+            var radius_mean = document.getElementById('radius_mean').value;
+            var texture_mean = document.getElementById('texture_mean').value;
+            var perimeter_mean = document.getElementById('perimeter_mean').value;
+            var area_mean = document.getElementById('area_mean').value;
+            var smoothness_mean = document.getElementById('smoothness_mean').value;
+            var compactness_mean = document.getElementById('compactness_mean').value;
+            var concavity_mean = document.getElementById('concavity_mean').value;
+            var concave_points_mean = document.getElementById('concave_points_mean').value;
+            var symmetry_mean = document.getElementById('symmetry_mean').value;
+            var fractal_dimension_mean = document.getElementById('fractal_dimension_mean').value;
+            var radius_se = document.getElementById('radius_se').value;
+            var texture_se = document.getElementById('texture_se').value;
+            var perimeter_se = document.getElementById('perimeter_se').value;
+            var area_se = document.getElementById('area_se').value;
+            var smoothness_se = document.getElementById('smoothness_se').value;
+            var compactness_se = document.getElementById('compactness_se').value;
+            var concavity_se = document.getElementById('concavity_se').value;
+            var concave_points_se = document.getElementById('concave_points_se').value;
+            var symmetry_se = document.getElementById('symmetry_se').value;
+            var fractal_dimension_se = document.getElementById('fractal_dimension_se').value;
+            var radius_worst = document.getElementById('radius_worst').value;
+            var texture_worst = document.getElementById('texture_worst').value;
+            var perimeter_worst = document.getElementById('perimeter_worst').value;
+            var area_worst = document.getElementById('area_worst').value;
+            var smoothness_worst = document.getElementById('smoothness_worst').value;
+            var compactness_worst = document.getElementById('compactness_worst').value;
+            var concavity_worst = document.getElementById('concavity_worst').value;
+            var concave_points_worst = document.getElementById('concave_points_worst').value;
+            var symmetry_worst = document.getElementById('symmetry_worst').value;
+            var fractal_dimension_worst = document.getElementById('fractal_dimension_worst').value;
+
+            var jsonToSend = {
+                'radius_mean': radius_mean, 'texture_mean': texture_mean, 'perimeter_mean': perimeter_mean,
+                'area_mean': area_mean, 'smoothness_mean': smoothness_mean, 'compactness_mean': compactness_mean,
+                'concavity_mean': concavity_mean, 'concave_points_mean': concave_points_worst, 'symmetry_mean': symmetry_mean,
+                'fractal_dimension_mean': fractal_dimension_mean, 'radius_se': radius_se, 'texture_se': texture_se,
+                'perimeter_se': perimeter_mean, 'area_se': area_mean, 'smoothness_se': smoothness_mean, 'compactness_se': compactness_mean,
+                'concavity_se': concavity_se, 'concave_points_se': concave_points_se, 'symmetry_se': symmetry_se,
+                'fractal_dimension_se': fractal_dimension_se, 'radius_worst': radius_worst, 'texture_worst': texture_worst,
+                'perimeter_worst': perimeter_worst, 'area_worst': area_worst, 'smoothness_worst': smoothness_worst,
+                'compactness_worst': compactness_worst, 'concavity_worst': concavity_worst, 'concave_points_worst': concave_points_worst,
+                'symmetry_worst': symmetry_worst, 'fractal_dimension_worst': fractal_dimension_worst
+            };
+
+            var req = new XMLHttpRequest();
+            req.open('POST', '/getPrediction', true);
+            req.setRequestHeader("Content-type", "application/json");
+
+            jsonToSend = JSON.stringify(jsonToSend);
+
+            req.send(jsonToSend);
+
+            req.onload = function () {
+                var response = JSON.parse(req.responseText);
+                console.log(response.output);
+                document.getElementById('out').value = response.output;
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>

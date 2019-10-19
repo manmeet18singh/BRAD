@@ -1,0 +1,51 @@
+body {
+    background-image: linear-gradient(to left, rgb(37, 70, 179), rgb(80, 113, 221));
+}
+
+h6 {
+    padding-top: 10px;
+    font-size: 14px !important;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    top: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    background-color: rgb(252, 103, 252);
+    color: white;
+}
+
+.btn:hover {
+    background-color:  rgb(62, 116, 252);
+    color: black;
+}
+
+.form-control {
+    width: 100px !important;
+}
+
+#col_out {
+    padding-top: 25px !important;
+}
+
+#out {
+    /* padding-top: 25px !important; */
+    width: 100% !important;
+}
+
+#input {
+    margin-right: 200px;
+}
+
+#output {
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
+}
